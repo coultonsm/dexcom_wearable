@@ -24,3 +24,16 @@ I have a friend who has both Type 1 Diabetes and hearing loss, and lots of exist
 I chose the XIAO ESP32-C3 platform from <a href="https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/">Seeed Studio.</a> It is a compact ESP32 development board that has built in Wi-Fi 4 (IEEE 802.11 b/g/n) and Bluetooth LE. It also contains circuitry to connect a battery and act as a charger, reducing the amount of additional hardware required.
 
 The battery I am using for initial testing is a generic 500mAh LiPo battery. It is important to note that a minimum of a 370mAh battery is recommended due to the ESP32-C3 having a fixed charge current of 370 mA.
+
+## Usage Notes
+To use my code in its current state, create a file named `secrets.h` and define the following secrets:
+
+`SECRET_USER` - Dexcom Share username
+
+`SECRET_PASS` - Dexcom Share password
+
+`WIFI_NAME` - Wifi network to connect to
+
+`WIFI_PASS` - Wifi network password
+
+Eventually these hard-coded values will be replaced with a companion app
